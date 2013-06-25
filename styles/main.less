@@ -24,6 +24,8 @@
 
 #main-region, #footer-region { padding: 0 10px }
 
+#footer-region { padding-bottom: 20px; }
+
 html .has-logo.has-title .themed {
   #header {
     .header-table {
@@ -76,7 +78,7 @@ body {
 
 #header {
   margin: 0 auto;
-  padding: 15px 35px 15px;
+  padding: 15px 10px 15px;
   width: @pop-width;
 }
 
@@ -125,10 +127,11 @@ a, a:hover, a:visited, a:active {
   margin: 0 auto;
 }
 
+#pop-sharing { padding: 10px 0 5px; }
+#pop-links { margin-top: 15px; }
+
 /* clearfix */
 .columnizer-row:after {display: block; visibility: hidden; height: 0; clear: both; content: ".";} .columnizer-row {*zoom: 1;}
-
-
 
 .columnizer-row {
   padding: 0 0 40px;
@@ -174,6 +177,10 @@ a, a:hover, a:visited, a:active {
     margin-bottom: 0.5em;
   }
 
+}
+
+.body, .description {
+  word-wrap: break-word;
 }
 
 @sprite-cols: 10;
@@ -327,7 +334,7 @@ a, a:hover, a:visited, a:active {
 
   #header, .columnizer-row { width: auto !important; }
   html .themed #header h1#pop-title {
-    padding: 0 15px;
+    padding-top: 10px;
   }
 
 
