@@ -33,7 +33,7 @@
       </div>
     </div>
     <div id="header-separator"></div>
-    {{#region "columnizer" id="main-region" max_cols="3" dummy_content="I-3,I-2,I-1|I-2,V-1|I-1|V-1|V-1,V-1|V-1,V-2,V-3|E-2,T-1,T-3|D-1|D-6|D-3,I-1,T-1|T-1,I-4|T-1"}}
+    {{#region "columnizer" id="main-region" max_cols="3" max_auto_assets="0" dummy_content="I-3,I-2,I-1|I-2,V-1|I-1|V-1|V-1,V-1|V-1,V-2,V-3|E-2,T-1,T-3|D-1|D-6|D-3,I-1,T-1|T-1,I-4|T-1"}}
 
       {{#asset "text" size="1"}}
         <div class="asset-content">
@@ -159,7 +159,7 @@
     {{/region}}
 
     <div id="footer-separator"></div>
-    {{#region "columnizer" id="footer-region" max_cols="3" dummy_content="I-3,I-2,I-1|I-2,V-1|I-1|V-1|V-1,V-1|V-1,V-2,V-3|E-2,T-1,T-3|D-1|D-6|D-3,I-1,T-1|T-1,I-4|T-1"}}
+    {{#region "columnizer" id="footer-region" max_cols="3" max_auto_assets="1" dummy_content="I-3,I-2,I-1|I-2,V-1|I-1|V-1|V-1,V-1|V-1,V-2,V-3|E-2,T-1,T-3|D-1|D-6|D-3,I-1,T-1|T-1,I-4|T-1"}}
 
       {{#asset "text" size="1"}}
         <div class="asset-content">
@@ -283,6 +283,9 @@
       {{/asset}}
 
     {{/region}}
+
+    {{sharing}}
+    {{pop_links}}
 
   </script>
 </body>
