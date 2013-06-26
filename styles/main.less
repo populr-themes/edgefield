@@ -134,7 +134,7 @@ a, a:hover, a:visited, a:active {
 .columnizer-row:after {display: block; visibility: hidden; height: 0; clear: both; content: ".";} .columnizer-row {*zoom: 1;}
 
 .columnizer-row {
-  padding: 0 0 40px;
+  padding: 0 0 @row-padding;
   margin: 0 auto;
   width: @pop-width;
   #footer-region &:first-child {
@@ -166,9 +166,10 @@ a, a:hover, a:visited, a:active {
 .asset {
   .asset-background();
 
-  .asset-content {
+  .asset-text {
     padding: @text-padding;
   }
+
   h2.asset-title {
     font-family: @headline-font-family;
     font-size: 1.5em;
@@ -176,7 +177,10 @@ a, a:hover, a:visited, a:active {
     line-height: 1.2em;
     margin-bottom: 0.5em;
   }
+}
 
+.asset-type-imagegroup, .asset-type-embedgroup {
+  .asset-content { margin-bottom: @content-margin-bottom; }
 }
 
 .body, .description {
@@ -219,12 +223,12 @@ a, a:hover, a:visited, a:active {
 }
 
 .asset-type-documentgroup {
-  .asset-content {
+  .asset-text {
     padding-bottom: 0;
   }
 }
 
-.asset-type-text .asset-content, .asset .description {
+.asset-type-text .asset-text, .asset .description {
   ul, ol {
     padding-left: @baseline;
   }
