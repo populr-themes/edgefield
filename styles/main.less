@@ -22,7 +22,7 @@
 
 #populr > .link-button();
 #populr > .icon();
-#populr > .side-by-side-logo();
+#populr > .inline-logo-title();
 
 #main-region, #footer-region { padding: 0 10px }
 
@@ -47,7 +47,7 @@ body {
 
 #header {
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 25px 0 15px;
   width: @pop-width;
 }
 
@@ -88,7 +88,6 @@ a, a:hover, a:visited, a:active {
   // font-style: italic;
   font-size: 40px;
   line-height: 1.2em;
-  margin: 0 auto;
 }
 
 #pop-sharing { padding: 10px 0 5px; }
@@ -299,6 +298,13 @@ a, a:hover, a:visited, a:active {
 @media screen and (max-width: 960px)  {
   #populr > .mobile-reset();
 
+  #header {
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+  }
+
   .asset-type-imagegroup .image-container, .asset-type-imagegroup .asset-inner:before, .asset-type-imagegroup .asset-inner:after { width: inherit!important; height: inherit!important; .box-shadow(0 0px 0px rgba(0,0,0,0))!important; background: transparent!important; }
   .asset-type-imagegroup .image-title { width: 100% !important; }
   .asset-type-imagegroup .image-container img { min-width: 100% !important;}
@@ -306,9 +312,6 @@ a, a:hover, a:visited, a:active {
   .columnizer-row {
     width: auto !important;
     max-width: 720px !important;
-  }
-  html .themed #header h1#pop-title {
-    padding-top: 10px;
   }
 
   .columnizer-row {
