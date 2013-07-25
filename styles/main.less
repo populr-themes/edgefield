@@ -26,7 +26,10 @@
 
 #main-region, #footer-region { padding: 0 10px }
 
-#footer-region { padding-bottom: 20px; }
+#footer-region {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
 body {
   font-family: 'Titillium Web', Verdana, sans-serif;
@@ -335,6 +338,13 @@ a, a:hover, a:visited, a:active {
   .columnizer-cols1 .columnizer-col, .columnizer-cols2 .columnizer-col, .columnizer-cols3 .columnizer-col {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1#pop-title {
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
   }
 }
 
