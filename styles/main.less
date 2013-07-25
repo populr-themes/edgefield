@@ -20,9 +20,9 @@
 
 #reset > .global-reset();
 
-// #populr > .link-button();
-// #populr > .icon();
-// #populr > .inline-logo-title();
+#populr > .link-button();
+#populr > .icon();
+#populr > .inline-logo-title();
 
 #main-region, #footer-region { padding: 0 10px }
 
@@ -141,6 +141,7 @@ a, a:hover, a:visited, a:active {
     margin-bottom: 0.5em;
   }
 }
+.asset-type-embedgroup.asset-size-1 h2.asset-title { margin-bottom: 0; }
 
 .asset-type-imagegroup, .asset-type-embedgroup {
   .asset-content { margin-bottom: @content-margin-bottom; }
@@ -285,7 +286,7 @@ a, a:hover, a:visited, a:active {
   .cycle-pager {
     color: @custom-color;
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     width: 100%;
     font-family: Verdana, sans-serif;
     span.cycle-pager-active {
